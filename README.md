@@ -13,6 +13,15 @@ ls -lh example.txt
 du -sh .[^.]* * | sort -h
 ```
 
+## Git
+
+#### 1. Reapply .gitignore
+```bash
+git rm -r --cached .
+git add .
+git commit -m "Reapply .gitignore"
+```
+
 ## Conda
 
 
