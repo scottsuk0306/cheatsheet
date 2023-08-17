@@ -22,6 +22,13 @@ git add .
 git commit -m "Reapply .gitignore"
 ```
 
+#### 2. git clone but with a different directory name
+
+```bash
+git clone https://github.com/username/myproject.git myproject-clone
+```
+
+
 ## Conda
 
 
