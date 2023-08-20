@@ -25,6 +25,12 @@ df -h
 df -h directory_name
 ```
 
+#### 5. Check how much space the current directory takes up
+```bash
+du -sh .
+```
+
+
 ## Docker
 
 
