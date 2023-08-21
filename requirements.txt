@@ -1,0 +1,12 @@
+datasets
+torch==2.0.1
+tqdm
+transformers
+trl
+lxml
+accelerate
+optimum
+hydra-core
+wandb
+deepspeed
+peft
