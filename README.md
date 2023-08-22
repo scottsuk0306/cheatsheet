@@ -57,6 +57,17 @@ wget https://repo.continuum.io/archive/Anaconda3-2023.03-Linux-x86_64.sh
 bash Anaconda3-2023.03-Linux-x86_64.sh
 ```
 
+#### 2. Create a new environment
+```bash
+conda create -n env_name python=3.9
+```
+
+#### 3. Manually configure the installation path for conda environments and packages 
+```bash
+conda config --prepend pkgs_dirs [PATH]
+conda config --prepend envs_dirs [PATH]
+```
+
 ## Huggingface
 
 ## Tmux
