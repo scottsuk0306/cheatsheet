@@ -16,7 +16,7 @@ du -sh .[^.]* * | sort -h
 ```
 
 - Recursively search in the current directory, for files larger than 100MB
-```
+```bash
 find . -type f -size +100M -exec du -h {} + | sort -h
 ```
 
