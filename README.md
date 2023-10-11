@@ -9,23 +9,35 @@ ls -lh example.txt
 ```
 
 #### 2. Sort files accroding to the file size
+
+- In the current directory
 ```bash
 du -sh .[^.]* * | sort -h
 ```
 
-#### 3. See usage of a whole file system
+- Recursively search in the current directory, for files larger than 100MB
+```
+find . -type f -size +100M -exec du -h {} + | sort -h
+```
+
+#### 3. Sort Users according the the used up space
+```bash
+sudo du -sh /home/* | sort -h
+```
+
+#### 4. See usage of a whole file system
 
 ```bash
 df -h
 ```
 
-#### 4. Determine the device of the directory
+#### 5. Determine the device of the directory
 
 ```bash
 df -h directory_name
 ```
 
-#### 5. Check how much space the current directory takes up
+#### 6. Check how much space the current directory takes up
 ```bash
 du -sh .
 ```
