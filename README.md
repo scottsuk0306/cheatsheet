@@ -88,3 +88,10 @@ conda config --prepend envs_dirs [PATH]
 ```bash
 sudo apt-get install tmux
 ```
+
+## Poetry
+
+#### 1. Remove poetry env
+```bash
+poetry env remove $(which python)
+```
