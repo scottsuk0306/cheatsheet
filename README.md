@@ -44,10 +44,17 @@ du -sh .
 
 ## Docker
 
-#### 1. Run docker container with mounted directory and gpus attached
+#### 1. Run docker container with mounted directory and gpus attached, in detach mode
 ```bash
-docker run --gpus all -v {local_directory}:/home/juyoung -it --name {container_name} {image_name}
+docker run --gpus all -v /mnt/sda/{your_directory}:/home/{your_username} -d --name {container_name} {image_name}
 ```
+
+#### 2. Interact with a running container
+```bash
+docker exec -it {container_name} /bin/bash
+```
+
+
 
 ## Git
 
