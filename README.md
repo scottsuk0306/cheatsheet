@@ -42,9 +42,12 @@ df -h directory_name
 du -sh .
 ```
 
-
 ## Docker
 
+#### 1. Run docker container with mounted directory and gpus attached
+```bash
+docker run --gpus all -v {local_directory}:/home/juyoung -it --name {container_name} {image_name}
+```
 
 ## Git
 
