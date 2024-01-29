@@ -49,7 +49,13 @@ du -sh .
 docker run --gpus all -v /mnt/sda/{your_directory}:/home/{your_username} -d --name {container_name} {image_name}
 ```
 
-#### 2. Interact with a running container
+#### 2. Run docker container with gpus attached, in detach mode
+```bash
+docker run --gpus all -d --name {container_name} {image_name}
+```
+
+
+#### 3. Interact with a running container
 ```bash
 docker exec -it {container_name} /bin/bash
 ```
