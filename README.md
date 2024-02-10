@@ -81,8 +81,13 @@ git clone https://github.com/username/myproject.git myproject-clone
 
 #### 1. Install conda
 ```bash
-wget https://repo.continuum.io/archive/Anaconda3-2023.03-Linux-x86_64.sh
-bash Anaconda3-2023.03-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+# install without interaction
+./Miniconda3-latest-Linux-x86_64.sh -b -u
+
+# conda bash init
+~/miniconda3/bin/conda init
 ```
 
 #### 2. Create a new environment
@@ -90,7 +95,12 @@ bash Anaconda3-2023.03-Linux-x86_64.sh
 conda create -n env_name python=3.9
 ```
 
-#### 3. Manually configure the installation path for conda environments and packages 
+#### 3. Install python using conda
+```bash
+conda install python3.XX
+```
+
+#### 4. Manually configure the installation path for conda environments and packages 
 ```bash
 conda config --prepend pkgs_dirs [PATH]
 conda config --prepend envs_dirs [PATH]
