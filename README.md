@@ -97,7 +97,7 @@ conda create -n env_name python=3.9
 
 #### 3. Install python using conda
 ```bash
-conda install python3.XX
+conda install python=3.X
 ```
 
 #### 4. Manually configure the installation path for conda environments and packages 
