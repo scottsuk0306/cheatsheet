@@ -121,3 +121,8 @@ sudo apt-get install tmux
 ```bash
 poetry env remove $(which python)
 ```
+
+#### 2. Install poetry
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
